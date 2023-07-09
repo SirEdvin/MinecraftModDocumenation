@@ -2,8 +2,8 @@
 
 This API is dedicated to XP manipulations: collecting it, moving out/to player and store it inside turtle.
 
-!!! danger
-    Due to ComputerCraft limitations all stored XP will be lost if you unequip turtle upgrade.
+!!! warning
+    Before 1.0.0, due to ComputerCraft limitations all stored XP will be lost if you unequip turtle upgrade.
 
 | Function                     | Returns        | Description                                                                                                                      |
 |------------------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------|

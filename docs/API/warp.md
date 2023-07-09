@@ -2,11 +2,8 @@
 
 Warp API essentially comes from harvesting power of The End itself. It allows you to jump to previously stored points instantly and with reduced cost.
 
-!!! danger
-    Due to ComputerCraft limitations all stored points data will be lost if you unequip turtle upgrade.
-
-!!! danger
-    This API is dimension-bound. If you somehow change turtle dimension this will require full reset
+!!! warning
+    Before 1.0.0, due to ComputerCraft limitations all stored points data will be lost if you unequip turtle upgrade.
 
 !!! warning
     Points are limited per upgrade. It controlled by `endAutomataCoreWarpPointLimit` Minecraft settings and by default it is 64

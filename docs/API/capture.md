@@ -4,8 +4,8 @@ Capture API allows moving block or entities with storing it internal data! So fi
 
 Take a note, that released entity or block will be placed at front of turtle. Also, block can be placed only on empty space
 
-!!! danger
-    Due to ComputerCraft limitations stored entity will be lost if you unequip turtle upgrade.
+!!! warning
+    Before 1.0.0, due to ComputerCraft limitations stored entity will be lost if you unequip turtle upgrade.
 
 | Function                                              | Returns | Description                                                    |
 |-------------------------------------------------------|---------|----------------------------------------------------------------|
