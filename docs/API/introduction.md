@@ -95,3 +95,23 @@ BlockPos is just generic table with three requied fields - x, y and z. So, somet
 
 !!! warning
     In most cases block pos is expected to be relative to the target peripheral like in [scan API](scan.md)'
+
+
+### BlockPoses
+
+BlockPoses is just a list of [BlockPos](introduction.md#blockpos), so it looks like this:
+
+```lua
+{
+    {
+        x = 5,
+        y = 7,
+        z = 8
+    },
+    {
+        x = 2,
+        y = 2,
+        z = 1
+    }
+}
+```

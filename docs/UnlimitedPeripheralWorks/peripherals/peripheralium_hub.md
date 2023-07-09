@@ -7,12 +7,12 @@
     **Forge**: 1.19.4, 1.20.x
     **Fabric**: 1.19.4, 1.20.x
 
+!!! warning
+    Prior to 1.0.0 version, due to ComputerCraft limitations, all equipped upgrades will be deleted if you brake turtle or remove peripheralium hub without unequipping upgrades
+
 Turtle limited to two upgrade slots and pocket computers to one. With all this nasty new add-ons to CC:T it sometimes becomes a pain to select what upgrade you want to install. But with this hub, you can install all of them! 
 
 Nah, unfortunately, only 3 for base version and 7 for netherite one, but this is still something. And of course, both turtles and pocket computers are supported!
-
-!!! danger
-    Due to ComputerCraft limitations, all equipped upgrades will be deleted if you brake turtle or remove peripheralium hub without unequipping upgrades
 
 ## Supported APIs
 

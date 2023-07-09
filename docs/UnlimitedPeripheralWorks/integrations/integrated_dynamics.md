@@ -4,7 +4,7 @@
     ![Integrated dynamics](integrated_dynamics.png)
 
 ??? info "Supported versions"
-    **Forge**: 1.19.4
+    **Forge**: 1.19.4, 1.20.x
 
 [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics) is a mod that requires you to build networks for complex automation and system integration. It is a mix between bundled redstone, BuildCraft gates, and Applied Energistics-style networks.
 
