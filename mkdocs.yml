@@ -2,6 +2,10 @@ site_name: SirEdvin's Mods
 
 theme:
     name: 'material'
+    features:
+      - navigation.tabs
+      - navigation.expand
+      - toc.follow
     palette:
 
     # Dark mode

@@ -6,7 +6,11 @@
 ??? info "Supported versions"
     **Fabric**: 1.20.x
 
-[Unversal shops](https://modrinth.com/mod/universal-shops) is a Fabric (and Quilt compatible) trade shop mod designed to be flexible and usable in many types of servers. It works purely server side (still works on singleplayer), so it can work on your vanilla client compatible or modpack based servers. It includes craftable, Trade Shop block for players and Admin Trade Shop for admins/map makers.
+[Unversal shops](https://modrinth.com/mod/universal-shops) is a Fabric (and Quilt compatible) trade shop mod designed to be flexible and usable in many types of servers. It works purely server side (still works on singleplayer), so it can work on your vanilla client compatible or modpack based servers. It includes craftable, Trade Shop block for players and Admin Trade Shop for admins/map makers. Integration allow you to fully configure your shop and also extract or insert items into this.
+
+## Supported APIs
+
+- [inventory](https://tweaked.cc/generic_peripheral/inventory.html) API
 
 ## Peripheral methods
 
