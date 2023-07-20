@@ -108,3 +108,16 @@ Okay, but what if you want to make a rotated block that you mimic, for example, 
 ### ItemStack
 
 ItemStack is representing pure minecraft stack. So item identification with count. It can be just pure string that represents item id, in this case count will be set 1. Or it can be a table `{item = "minecraft:stick", count = 2}`, in table count field is also optional and will be 1 by default
+
+
+### RML
+
+RML is an acronym for Render Markup Language and is just a string with a list of specific instructions. Instructions should be separated via `;`
+
+There are several instructions available right now:
+- `t(x, y, z)`: shifts all render to assigned coordinates. Take note, that if you rotate the render, coordinates will shift places.
+- `r(axis, angle, x, y, z)`: basically a `rotateAround` function, when the axis can be `x`, `y` or `z`, the angle can be any value in degrees, and `x`, `y` and `z` are coordinate of rotation center. So if you want to rotate the block around the center, you probably need to do something like: `r(y, 90, 0.5, 1, 0.5)`
+- `s(x, y, z)`: scales render.
+
+
+So, for example, if you want to rotate the render around the x axis and then scale it, you should pass `r(y, 90, 0.5, 1, 0.5);s(1, 2, 1)`.
