@@ -94,24 +94,30 @@ BlockPos is just generic table with three requied fields - x, y and z. So, somet
 ```
 
 !!! warning
-    In most cases block pos is expected to be relative to the target peripheral like in [scan API](scan.md)'
+    In most cases block pos is expected to be relative to the target peripheral like in [scan API](scan.md)
+
+### BlockState
+
+BlockState is a type that is used to build block states that should be mimicked. It is a very complex and context-dependent type, so if you experiment with it, you should be prepared to face a lot of Lua exceptions.
+
+Let's start with the basics. If you want to just mimic block, you can use `{block = "minecraft:oak_log"}` to mimic block by ID. There are a number of extra attributes that you can use to modify block logic.
+
+Okay, but what if you want to make a rotated block that you mimic, for example, if the block is `minecraft:oak_stairs`. Parameter `attrs` will allow you to send desired [block state](https://minecraft.fandom.com/wiki/Block_states) values. So, for example, if you want stairs facing east, you can just send `{block="minecraft:oak_stairs", attrs={facing="east}}`. All block state values can be changed via `attrs` attribute, so feel free to use it from time to time.
 
 
-### BlockPoses
+### ItemStack
 
-BlockPoses is just a list of [BlockPos](introduction.md#blockpos), so it looks like this:
+ItemStack is representing pure minecraft stack. So item identification with count. It can be just pure string that represents item id, in this case count will be set 1. Or it can be a table `{item = "minecraft:stick", count = 2}`, in table count field is also optional and will be 1 by default
 
-```lua
-{
-    {
-        x = 5,
-        y = 7,
-        z = 8
-    },
-    {
-        x = 2,
-        y = 2,
-        z = 1
-    }
-}
-```
+
+### RML
+
+RML is an acronym for Render Markup Language and is just a string with a list of specific instructions. Instructions should be separated via `;`
+
+There are several instructions available right now:
+- `t(x, y, z)`: shifts all render to assigned coordinates. Take note, that if you rotate the render, coordinates will shift places.
+- `r(axis, angle, x, y, z)`: basically a `rotateAround` function, when the axis can be `x`, `y` or `z`, the angle can be any value in degrees, and `x`, `y` and `z` are coordinate of rotation center. So if you want to rotate the block around the center, you probably need to do something like: `r(y, 90, 0.5, 1, 0.5)`
+- `s(x, y, z)`: scales render.
+
+
+So, for example, if you want to rotate the render around the x axis and then scale it, you should pass `r(y, 90, 0.5, 1, 0.5);s(1, 2, 1)`.
