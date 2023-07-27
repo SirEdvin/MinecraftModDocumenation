@@ -36,7 +36,7 @@ UnlimitedPeripheralWorks is addon focused on providing a lot of peripherals for 
 
 ## Supported versions
 
-**Forge**: 1.19.4 (fixes), 1.20.x (features)
-**Fabric**: 1.18 (fixes), 1.19.2 (fixes), 1.19.4 (fixes), 1.20.x (features)
+**Forge**: 1.20.x (features)
+**Fabric**: 1.18 (fixes), 1.19.2 (fixes), 1.20.x (features)
 
 Be sure to check supported version tips in different pages, if they are exists.

@@ -6,8 +6,8 @@ Most of peripheral methods are collected into API methods. Every new automata co
 
 ## Supported versions
 
-**Forge**: 1.19.4 (fixes), 1.20.x (features)
-**Fabric**: 1.18 (fixes), 1.19.2 (fixes), 1.19.4 (fixes), 1.20.x (features)
+**Forge**: 1.20.x (features)
+**Fabric**: 1.18 (fixes), 1.19.2 (fixes), 1.20.x (features)
 
 ## Current features list
 
