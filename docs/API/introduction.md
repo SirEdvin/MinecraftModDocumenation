@@ -15,7 +15,6 @@ Mostly this sections contains enums, that are need to be passed as strings. Enum
 | Name                | Lua type         | Limitations                           |
 |---------------------|------------------|---------------------------------------|
 | interactionMode     | string           | Enum with values: any, block, entity  |
-| areaInteractionMode | string           | Enum with values: item, block, entity |
 | direction           | string           | Enum with values: up, down            |
 | Result              | boolean, string? | -                                     |
 | Result[T]           | T?, string?      | -                                     |
@@ -26,16 +25,6 @@ All functions, that accept _interactionMode_ as arguments, work with objects in 
 
 !!! info
     You can get available _interactionMode_ for specific APIs on peripheral documentation page. All available values is `both`, `entity` and `block`
-
-!!! warning
-    Pretty important to note that a lot of entity interaction will be limited to specific entities. For example, Husbandry Automata Core allows to works only with animals. Always checks peripheral documentation page to understand its limitation with entities.
-
-### Area interaction mode
-
-All functions, that accept _areaInteractionMode_ as arguments, work with objects in specific radius around it. You can get this radius via `getConfiguration()` method. Use this parameter to select what objects should to used for operation.
-
-!!! info
-    You can get available _areaInteractionMode_ for specific APIs on peripheral documentation page. All available values is `item`, `entity` and `block`
 
 !!! warning
     Pretty important to note that a lot of entity interaction will be limited to specific entities. For example, Husbandry Automata Core allows to works only with animals. Always checks peripheral documentation page to understand its limitation with entities.
