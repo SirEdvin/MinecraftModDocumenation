@@ -28,20 +28,28 @@ Any metric, that player will send with this integration would always start with 
 
 Will send [counter](https://github.com/statsd/statsd/blob/master/docs/metric_types.md#counting) to statsd server. Delta can be any real number.
 
+---
+
 ### delta
 `delta(aspect: String, delta: number)`
 
 Function send [gauge](https://github.com/statsd/statsd/blob/master/docs/metric_types.md#gauges) delta to statsd server. Delta can be any real number.
+
+---
 
 ### gauge
 `gauge(aspect: String, value: number)`
 
 Function sets [gauge](https://github.com/statsd/statsd/blob/master/docs/metric_types.md#gauges) value to stastd server. It **is** takes to account that you can't set negative value for gauge as one message, so it will actually send two messages, one with setting gauge to zero, and one with negative delta.
 
+---
+
 ### set
 `set(aspect: String, eventName: String)`
 
 Functions that sets some [aspect](https://github.com/statsd/statsd/blob/master/docs/metric_types.md#sets) to same value. Should accept anything
+
+---
 
 ### time
 `time(aspect: String, timeInMs: number)`
