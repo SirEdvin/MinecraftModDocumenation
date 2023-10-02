@@ -8,17 +8,17 @@
     **Forge**: 1.20.x
     **Fabric**: 1.20.x
 
-StatsD Bridge exists to allow players send [statsd metrics](https://github.com/statsd/statsd/blob/master/docs/metric_types.md) to preconfigured statsd server. Settings for this peripheral as split into two files.
+StatsD Bridge exists to allow players to send [statsd metrics](https://github.com/statsd/statsd/blob/master/docs/metric_types.md) to a preconfigured statsd server. The settings for this peripheral are split into two files.
 
-Common configuration field `enableStatsDBridge` corresponds for enabled peripheral block, while server configuration section `statsd` are responsible for statsd bridge configuration.
+The common configuration field `enableStatsDBridge` corresponds to the enabled peripheral block, while the server configuration section `statsd` is responsible for statsd bridge configuration.
 
-Server owner should configure `statsdHostname` and `statsdPort` and point it to some statsd receiver and set `enableStatsDConnection` to true. With this settings at start of server, new statsd non-blocking client will be started. Server owner also can define a `statsdPrefix` which will be added to name of any metrics at start.
+The server owner should configure `statsdHostname` and `statsdPort` and point them to some statsd receiver and set `enableStatsDConnection` to true. With these settings, at the start of the server, a new non-blocking statsd client will be started. The server owner can also define a `statsdPrefix` which will be added to the name of any metrics at start.
 
-Any metric, that player will send with this integration would always start with preconfigured `statsdPrefix` and will also contain owner name. So, it would be `<prefix><owner_name>.aspect`. Owner is a player, whom placed block. Owner name would also be used for rate limiting of messages to statsd client, but this is **not implemented** right now.
+Any metric that a player will send with this integration will always start with a preconfigured `statsdPrefix` and will also contain the owner's name. So, it would be `<prefix><owner_name>.aspect`. The owner is a player who placed the block. Owner is also used for rate limiting messages to the statsd client; the max amount of messages per minute is controlled by `statsdPlayerRateLimit`. This is also a global rate limit per minute, which is controlled by `statsdGlobalRateLimit`.
 
 ## Supported APIs
 
-- [Configuration API](configuration.md): will provide rate limiting information in future
+- [Configuration API](configuration.md): provides `playerRateLimit` and `globalRateLimit` which tells you how often you are allowed to send values per minute.
 
 
 ## Functions
