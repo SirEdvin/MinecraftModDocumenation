@@ -17,7 +17,7 @@ If you want to remove card from link, just right click on it with empty hand.
 
 List of supported entities:
 
-- Minecart with chest or with furnace would additionally provide [inventory](https://tweaked.cc/generic_peripheral/inventory.html) API to this minecart.
+- Minecarts with chest or with furnace would additionally provide [inventory](https://tweaked.cc/generic_peripheral/inventory.html) API to this minecart.
 - Horses, donkeys and llamas with chests would additionally provide [inventory](https://tweaked.cc/generic_peripheral/inventory.html) API.
 - Demons from [Occultism](https://www.curseforge.com/minecraft/mc-mods/occultism) if they have inventory would additionally provide [inventory](https://tweaked.cc/generic_peripheral/inventory.html) API.
 
