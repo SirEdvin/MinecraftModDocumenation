@@ -3,7 +3,7 @@
 [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) is a standalone tech mod, where the unltimate objective is TOTAL AUTOMATION, and with help of this ComputerCraft integration you will be able to achive it more quicky!
 
 ??? info "Supported versions"
-    **Fabric**: 1.18, 1.19.2
+    **Fabric**: 1.18, 1.19.2, 1.20.x
 
 ## Enegry integration
 
